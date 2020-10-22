@@ -6,6 +6,10 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
+  saves
+end
+
+def save
   @@all << self
 end
 
